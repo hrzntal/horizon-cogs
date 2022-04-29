@@ -202,7 +202,7 @@ class DeeBee(Cog):
 
 		self.engine = create_async_engine(
 			f"{dialect}+{driver}://{user}:{passwd}@{host}:{port}/{schema}",
-			echo=True,
+			echo=False,
 			future=True,
 			pool_timeout=5,
 			pool_recycle=300
