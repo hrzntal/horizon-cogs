@@ -1,0 +1,7 @@
+{
+	"author": ["Avunia Takiya"],
+	"short": "Discordlink Cog, allowing users to link their BYOND account with their Discord account.",
+	"description": "Discordlink Cog, allowing users to link their BYOND account with their Discord account.",
+	"tags": ["horizon", "utility"],
+	"requirements": ["sqlalchemy"]
+}

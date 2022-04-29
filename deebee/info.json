@@ -1,0 +1,7 @@
+{
+	"author": ["Avunia Takiya"],
+	"short": "A library cog using SQLAlchemy for making DB connections.",
+	"description": "A library cog using SQLAlchemy for making DB connections.",
+	"tags": ["horizon", "utility", "database", "sqlalchemy", "mysql", "postgresql", "sqlite", "mariadb", "orm"],
+	"requirements": ["sqlalchemy", "asyncmy"]
+}
