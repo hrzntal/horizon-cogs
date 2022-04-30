@@ -11,7 +11,7 @@ from sqlalchemy import select, update
 from sqlalchemy.engine import Row
 from typing import List, MutableMapping
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = ["atakiya"]
 
 log = logging.getLogger("red.horizon.cogs.discordlink")
