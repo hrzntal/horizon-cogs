@@ -43,6 +43,7 @@ class DiscordLinkCog(Cog):
 
 	@commands.guild_only()
 	@discordlink.group()
+	@checks.admin_or_permissions(administrator=True)
 	async def preferences(self, ctx: Context):
 		pass
 
