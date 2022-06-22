@@ -48,6 +48,16 @@ class DiscordLinkCog(Cog):
 		pass
 
 	@preferences.command()
+	async def membersonly(self, ctx: Context):
+		"""
+		Toggle whether or not to restrict gameserver entry to guild members only
+		"""
+		current_setting = await self.config.guild(ctx.guild).members_only()
+		new_setting = not current_setting
+		await self.config.guild(ctx.guild).members_only.set(new_setting)
+		await ctx.send(f"Guild Member restricted server entry is now {'enabled' if new_setting else 'disabled'}")
+
+	@preferences.command()
 	async def verifiedrole(self, ctx: Context, new_role_id: int = None):
 		"""
 		Set or get the role that will be given to users who have verified their Discord account.
